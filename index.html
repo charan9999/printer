@@ -12,6 +12,8 @@
   
 <!-- or -->
 <img id="barcode"/>
+<img id="barcode2"/>
+<img id="barcode3"/>
 <!-- or -->
 <script>
 
@@ -21,6 +23,23 @@ JsBarcode("#barcode", "123456", {
   lineColor: "#000",
   width: 4,
   height: 40,
+  displayValue: true
+});
+JsBarcode("#barcode2", "123456", {
+  format: "CODE39",
+  lineColor: "#000",
+  width: 4,
+  height: 40,
+  margin: 30,
+  displayValue: true
+});
+JsBarcode("#barcode3", "123456", {
+  format: "CODE39",
+  lineColor: "#000",
+  width: 4,
+  height: 40,
+  marginLeft: 30,
+  marginTop: 50,
   displayValue: true
 });
 </script>
